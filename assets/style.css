@@ -1,0 +1,107 @@
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+.hero-overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(15, 23, 42, 0.75) 0%,
+    rgba(15, 23, 42, 0.9) 100%
+  );
+}
+/* SPA pages open like new pages */
+.page.hidden {
+  display: none !important;
+}
+.page-enter {
+  animation: pageIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+@keyframes pageIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+#pageLoader {
+  transition:
+    width 0.4s ease,
+    opacity 0.4s ease;
+}
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Blueprint grid pattern */
+.blueprint {
+  background-color: #0f172a;
+  background-image:
+    linear-gradient(rgba(245, 158, 11, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(245, 158, 11, 0.07) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+/* Mobile menu */
+#mobileMenu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+#mobileMenu.open {
+  max-height: 560px;
+}
+/* Timeline line */
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 19px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, #f59e0b, #1e293b);
+}
+@media (min-width: 768px) {
+  .timeline::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+/* Accordion */
+.acc-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+.acc-item.open .acc-body {
+  max-height: 300px;
+}
+.acc-item.open .acc-chevron {
+  transform: rotate(180deg);
+}
+.acc-chevron {
+  transition: transform 0.3s ease;
+}
+/* Active states */
+.nav-link.active {
+  color: #f59e0b;
+  font-weight: 700;
+}
+.tab-btn.active {
+  background: #d97706;
+  color: #fff;
+  box-shadow: 0 8px 18px -6px rgba(217, 119, 6, 0.6);
+}
+.filter-btn.filter-active {
+  background: #0f172a !important;
+  color: #fff !important;
+  border-color: #0f172a !important;
+}

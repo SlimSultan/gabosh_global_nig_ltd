@@ -1,0 +1,848 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gabosh-Global-Nig-Ltd | Engineering & Real Estate Solutions</title>
+    <meta
+      name="description"
+      content="Gabosh Global Nigeria Limited (GGNL) — Established 2012. Engineering, construction & real estate solutions in Abuja and Kwara State."
+    />
+    <!-- Tailwind CSS CDN -->
+    <link rel="stylesheet" href="./assets/css/output.css" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body class="bg-slate-50 text-slate-800 antialiased">
+    <!-- PAGE LOAD BAR -->
+    <div class="fixed top-0 left-0 right-0 z-[100] h-[3px] bg-transparent">
+      <div
+        id="pageLoader"
+        class="h-full w-0 bg-gradient-to-r from-amber-400 to-amber-600"
+      ></div>
+    </div>
+
+    <!-- NAVIGATION BAR -->
+    <nav
+      class="fixed top-0 left-0 right-0 z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between"
+      >
+        <!-- Brand Logo -->
+        <div class="flex items-center gap-3">
+          <!-- Brand Logo Integration -->
+          <a href="index.html" class="flex items-center gap-3 group">
+            <div
+              class="h-12 py-1 flex items-center justify-center rounded-lg overflow-hidden transition-transform group-hover:scale-105"
+            >
+              <img
+                src="./assets/images/company-logo/black-logo.jpeg"
+                alt="Gabosh Global Nig Ltd Logo"
+                class="h-full w-auto object-contain rounded-md"
+                onerror="
+                  this.onerror = null;
+                  this.parentElement.innerHTML =
+                    '<div class=\'h-10 px-3 bg-amber-600 rounded flex items-center justify-center font-extrabold text-white text-lg tracking-wider\'>GABOSH</div>';
+                "
+              />
+            </div>
+          </a>
+
+          <div>
+            <span class="text-xl font-extrabold text-white tracking-tight"
+              >GABOSH <span class="text-amber-500">GLOBAL</span></span
+            >
+            <span
+              class="block text-[10px] tracking-widest text-slate-400 uppercase font-semibold"
+              >Build • Manage • Trade</span
+            >
+          </div>
+        </div>
+
+        <!-- Navigation Links -->
+        <div
+          class="hidden lg:flex items-center gap-7 font-medium text-sm text-slate-300"
+        >
+          <a
+            href="index.html"
+            class="nav-link hover:text-amber-500 transition-colors"
+            >Home</a
+          >
+          <a
+            href="aboutus.html"
+            class="nav-link hover:text-amber-500 transition-colors"
+            >About Us</a
+          >
+          <a
+            href="services.html"
+            class="nav-link hover:text-amber-500 transition-colors"
+            >Services</a
+          >
+          <a
+            href="properties.html"
+            class="nav-link hover:text-amber-500 transition-colors"
+            >Buy & Sell</a
+          >
+          <a
+            href="construction.html"
+            class="nav-link hover:text-amber-500 transition-colors"
+            >Construction & Blueprint</a
+          >
+          <a
+            href="management.html"
+            class="nav-link hover:text-amber-500 transition-colors"
+            >Estate Management</a
+          >
+          <a
+            href="portfolio.html"
+            class="nav-link hover:text-amber-500 transition-colors"
+            >Projects</a
+          >
+        </div>
+
+        <!-- CTA Button -->
+        <div class="flex items-center gap-4">
+          <a
+            href="contact.html"
+            class="sm:inline-flex bg-amber-600 hover:bg-amber-500 text-white font-semibold text-sm px-5 py-2.5 rounded-lg shadow-md transition-all duration-200"
+          >
+            Get Free Consultation
+          </a>
+          <button
+            id="menuBtn"
+            class="lg:hidden text-slate-300 hover:text-white transition"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+          >
+            <i data-lucide="menu" class="w-6 h-6" id="menuIconOpen"></i>
+            <i data-lucide="x" class="w-6 h-6 hidden" id="menuIconClose"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobileMenu"
+        class="lg:hidden bg-slate-900 border-t border-slate-800"
+      >
+        <div
+          class="px-6 py-4 flex flex-col gap-1 text-sm font-medium text-slate-300 max-h-[70vh] overflow-y-auto"
+        >
+          <a
+            href="index.html"
+            class="mobile-link py-2.5 px-3 rounded-lg hover:bg-slate-800 hover:text-amber-500 transition"
+            >Home</a
+          >
+          <a
+            href="aboutus.html"
+            class="mobile-link py-2.5 px-3 rounded-lg hover:bg-slate-800 hover:text-amber-500 transition"
+            >About Us</a
+          >
+          <a
+            href="services.html"
+            class="mobile-link py-2.5 px-3 rounded-lg hover:bg-slate-800 hover:text-amber-500 transition"
+            >Services</a
+          >
+          <a
+            href="properties.html"
+            class="mobile-link py-2.5 px-3 rounded-lg hover:bg-slate-800 hover:text-amber-500 transition"
+            >Buy & Sell</a
+          >
+          <a
+            href="construction.html"
+            class="mobile-link py-2.5 px-3 rounded-lg hover:bg-slate-800 hover:text-amber-500 transition"
+            >Construction & Blueprint</a
+          >
+          <a
+            href="management.html"
+            class="mobile-link py-2.5 px-3 rounded-lg hover:bg-slate-800 hover:text-amber-500 transition"
+            >Estate Management</a
+          >
+          <a
+            href="portfolio.html"
+            class="mobile-link py-2.5 px-3 rounded-lg hover:bg-slate-800 hover:text-amber-500 transition"
+            >Projects</a
+          >
+          <a
+            href="contact.html"
+            class="mobile-link mt-2 bg-amber-600 hover:bg-amber-500 text-white font-semibold text-center px-5 py-3 rounded-lg transition"
+            >Get Free Consultation</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <div id="page-management" class="page">
+      <!-- PAGE HERO -->
+      <section
+        class="relative pt-40 pb-24 bg-slate-900 text-white overflow-hidden"
+      >
+        <img
+          src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=2000"
+          class="absolute inset-0 w-full h-full object-cover opacity-30"
+          alt="Estate"
+        />
+        <div
+          class="absolute inset-0 bg-gradient-to-b from-slate-900/70 via-slate-900/80 to-slate-900"
+        ></div>
+        <div class="relative max-w-7xl mx-auto px-6 z-10">
+          <nav
+            class="flex items-center gap-2 text-xs text-slate-400 mb-6 font-medium"
+          >
+            <a
+              href="#/home"
+              data-page="home"
+              class="page-link hover:text-amber-500 transition"
+              >Home</a
+            >
+            <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+            <span class="text-amber-500">Estate Management</span>
+          </nav>
+          <div class="max-w-3xl">
+            <div
+              class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs font-semibold uppercase tracking-wider mb-6"
+            >
+              <i data-lucide="building-2" class="w-4 h-4"></i> Facility & Estate
+              Care
+            </div>
+            <h1
+              class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight mb-6"
+            >
+              Own in Peace.
+              <span
+                class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-600"
+                >We Handle the Rest.</span
+              >
+            </h1>
+            <p class="text-slate-300 text-lg max-w-2xl leading-relaxed">
+              Facility upkeep, tenant screening, rent collection, security &
+              structural audits — with monthly photo/video reports.
+            </p>
+            <div class="flex flex-wrap gap-4 pt-8">
+              <a
+                href="#/contact"
+                data-page="contact"
+                class="page-link bg-amber-600 hover:bg-amber-500 text-white font-semibold px-6 py-3.5 rounded-xl shadow-lg flex items-center gap-2 transition-all"
+              >
+                Get Management Quote
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </a>
+              <a
+                href="https://wa.me/2348032211668?text=Hello%20Gabosh,%20I%20need%20estate%20management%20inspection"
+                target="_blank"
+                class="bg-slate-800/80 hover:bg-slate-800 border border-slate-700 text-white font-semibold px-6 py-3.5 rounded-xl transition-all flex items-center gap-2"
+              >
+                <i data-lucide="calendar-check" class="w-4 h-4"></i> Book Free
+                Inspection
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STATS -->
+      <section class="bg-slate-900 border-t border-slate-800 py-10">
+        <div
+          class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center"
+        >
+          <div>
+            <p class="text-3xl sm:text-4xl font-extrabold text-amber-500">
+              <span data-counter="98">0</span>%
+            </p>
+            <p
+              class="text-xs uppercase tracking-wider text-slate-400 font-semibold mt-1"
+            >
+              Rent Collection Rate
+            </p>
+          </div>
+          <div>
+            <p class="text-3xl sm:text-4xl font-extrabold text-white">
+              <span data-counter="500">0</span>+
+            </p>
+            <p
+              class="text-xs uppercase tracking-wider text-slate-400 font-semibold mt-1"
+            >
+              Acres Under Management
+            </p>
+          </div>
+          <div>
+            <p class="text-3xl sm:text-4xl font-extrabold text-amber-500">
+              24<span class="text-2xl">hr</span>
+            </p>
+            <p
+              class="text-xs uppercase tracking-wider text-slate-400 font-semibold mt-1"
+            >
+              Emergency Response
+            </p>
+          </div>
+          <div>
+            <p class="text-3xl sm:text-4xl font-extrabold text-white">
+              <span data-counter="100">0</span>%
+            </p>
+            <p
+              class="text-xs uppercase tracking-wider text-slate-400 font-semibold mt-1"
+            >
+              Monthly Reporting
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES -->
+      <section class="py-24 max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+          <h2
+            class="text-xs font-extrabold text-amber-600 uppercase tracking-widest mb-2"
+          >
+            Full Coverage
+          </h2>
+          <h3 class="text-3xl sm:text-4xl font-bold text-slate-900">
+            Three Pillars of Estate Care
+          </h3>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div
+            class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 reveal"
+          >
+            <div
+              class="w-14 h-14 bg-amber-50 rounded-xl flex items-center justify-center text-amber-600 mb-6"
+            >
+              <i data-lucide="wrench" class="w-8 h-8"></i>
+            </div>
+            <h4 class="text-xl font-bold text-slate-900 mb-3">
+              Maintenance & Repairs
+            </h4>
+            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+              Plumbing, electrical, painting, roofing & generator servicing on
+              scheduled SLA.
+            </p>
+            <ul class="text-sm text-slate-600 space-y-2">
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-amber-600"></i>
+                24hr emergency line
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-amber-600"></i>
+                Quarterly structural checks
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-amber-600"></i>
+                Vetted artisans only
+              </li>
+            </ul>
+          </div>
+          <div
+            class="bg-slate-900 p-8 rounded-2xl border border-slate-800 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 reveal"
+          >
+            <div
+              class="w-14 h-14 bg-amber-500/15 rounded-xl flex items-center justify-center text-amber-500 mb-6"
+            >
+              <i data-lucide="users" class="w-8 h-8"></i>
+            </div>
+            <h4 class="text-xl font-bold text-white mb-3">
+              Tenant & Rent Management
+            </h4>
+            <p class="text-slate-300 text-sm leading-relaxed mb-4">
+              Verified tenants, tenancy agreements, rent & service-charge
+              collection with receipts.
+            </p>
+            <div
+              class="bg-white/5 border border-white/10 rounded-xl p-4 flex items-center justify-between"
+            >
+              <div>
+                <p
+                  class="text-[11px] font-bold uppercase tracking-wider text-slate-400"
+                >
+                  Collection Rate
+                </p>
+                <p class="text-2xl font-extrabold text-amber-500">98.4%</p>
+              </div>
+              <div
+                class="w-12 h-12 rounded-full bg-amber-500/15 flex items-center justify-center"
+              >
+                <i data-lucide="trending-up" class="w-5 h-5 text-amber-500"></i>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 reveal"
+          >
+            <div
+              class="w-14 h-14 bg-amber-50 rounded-xl flex items-center justify-center text-amber-600 mb-6"
+            >
+              <i data-lucide="shield" class="w-8 h-8"></i>
+            </div>
+            <h4 class="text-xl font-bold text-slate-900 mb-3">
+              Security & Estate Setup
+            </h4>
+            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+              Gatehouse design, CCTV layout, access control & estate rules
+              enforcement.
+            </p>
+            <ul class="text-sm text-slate-600 space-y-2">
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-amber-600"></i>
+                Guard vetting & rostering
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-amber-600"></i>
+                Visitor & access systems
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-amber-600"></i>
+                Estate constitution drafting
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- PLANS TABLE -->
+      <section class="py-20 bg-slate-100 border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="text-center max-w-2xl mx-auto mb-12 reveal">
+            <h2
+              class="text-xs font-extrabold text-amber-600 uppercase tracking-widest mb-2"
+            >
+              Management Plans
+            </h2>
+            <h3 class="text-3xl font-bold text-slate-900">
+              Fixed Monthly Plans, No Hidden Charges
+            </h3>
+            <p class="text-slate-500 text-sm mt-3">
+              Priced after a free inspection of your property.
+            </p>
+          </div>
+          <div
+            class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden reveal"
+          >
+            <div class="overflow-x-auto">
+              <table class="w-full text-sm min-w-[640px]">
+                <thead>
+                  <tr class="border-b border-slate-200 text-slate-500">
+                    <th class="text-left px-8 py-4 font-bold">Features</th>
+                    <th class="px-4 py-4 font-bold">Essential</th>
+                    <th class="px-4 py-4 font-bold text-amber-600">
+                      Premium ★
+                    </th>
+                    <th class="px-4 py-4 font-bold">Full Estate</th>
+                  </tr>
+                </thead>
+                <tbody class="text-center text-slate-700">
+                  <tr class="border-b border-slate-100">
+                    <td class="text-left px-8 py-3.5 font-semibold">
+                      Scheduled maintenance visits
+                    </td>
+                    <td>Monthly</td>
+                    <td class="font-bold text-slate-900">Bi-weekly</td>
+                    <td>Weekly + on-call</td>
+                  </tr>
+                  <tr class="border-b border-slate-100 bg-slate-50">
+                    <td class="text-left px-8 py-3.5 font-semibold">
+                      Emergency response
+                    </td>
+                    <td>48 hrs</td>
+                    <td class="font-bold text-slate-900">24 hrs</td>
+                    <td>Same day</td>
+                  </tr>
+                  <tr class="border-b border-slate-100">
+                    <td class="text-left px-8 py-3.5 font-semibold">
+                      Rent & service-charge collection
+                    </td>
+                    <td>
+                      <i
+                        data-lucide="minus"
+                        class="w-4 h-4 mx-auto text-slate-300"
+                      ></i>
+                    </td>
+                    <td>
+                      <i
+                        data-lucide="check"
+                        class="w-5 h-5 mx-auto text-emerald-600"
+                      ></i>
+                    </td>
+                    <td>
+                      <i
+                        data-lucide="check"
+                        class="w-5 h-5 mx-auto text-emerald-600"
+                      ></i>
+                    </td>
+                  </tr>
+                  <tr class="border-b border-slate-100 bg-slate-50">
+                    <td class="text-left px-8 py-3.5 font-semibold">
+                      Tenant sourcing & screening
+                    </td>
+                    <td>
+                      <i
+                        data-lucide="minus"
+                        class="w-4 h-4 mx-auto text-slate-300"
+                      ></i>
+                    </td>
+                    <td>
+                      <i
+                        data-lucide="check"
+                        class="w-5 h-5 mx-auto text-emerald-600"
+                      ></i>
+                    </td>
+                    <td>
+                      <i
+                        data-lucide="check"
+                        class="w-5 h-5 mx-auto text-emerald-600"
+                      ></i>
+                    </td>
+                  </tr>
+                  <tr class="border-b border-slate-100">
+                    <td class="text-left px-8 py-3.5 font-semibold">
+                      Monthly photo/video report
+                    </td>
+                    <td>
+                      <i
+                        data-lucide="check"
+                        class="w-5 h-5 mx-auto text-emerald-600"
+                      ></i>
+                    </td>
+                    <td>
+                      <i
+                        data-lucide="check"
+                        class="w-5 h-5 mx-auto text-emerald-600"
+                      ></i>
+                    </td>
+                    <td>
+                      <i
+                        data-lucide="check"
+                        class="w-5 h-5 mx-auto text-emerald-600"
+                      ></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-left px-8 py-3.5 font-semibold">
+                      Structural audit
+                    </td>
+                    <td>Yearly</td>
+                    <td class="font-bold text-slate-900">Quarterly</td>
+                    <td>Quarterly + security</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div
+              class="p-6 bg-slate-50 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4"
+            >
+              <p class="text-sm text-slate-600">
+                <strong class="text-slate-900">First inspection is FREE</strong>
+                for new estates in Abuja & Ilorin.
+              </p>
+              <a
+                href="#/contact"
+                data-page="contact"
+                class="page-link bg-slate-900 hover:bg-slate-800 text-white font-semibold text-sm px-7 py-3 rounded-xl shadow-md transition"
+                >Request My Plan</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="py-24 max-w-7xl mx-auto px-6">
+        <div
+          class="relative overflow-hidden rounded-3xl bg-slate-900 text-white px-8 py-14 sm:px-14 reveal"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1600"
+            class="absolute inset-0 w-full h-full object-cover opacity-20"
+            alt=""
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900/90 to-slate-900/40"
+          ></div>
+          <div class="relative grid lg:grid-cols-3 gap-8 items-center">
+            <div class="lg:col-span-2">
+              <h3 class="text-3xl sm:text-4xl font-extrabold mb-4">
+                Tired of Chasing Artisans & Tenants?
+              </h3>
+              <p class="text-slate-300 max-w-xl">
+                Hand your property over — we audit it free, then propose a fixed
+                monthly plan.
+              </p>
+            </div>
+            <div class="flex flex-col sm:flex-row lg:flex-col gap-4">
+              <a
+                href="#/contact"
+                data-page="contact"
+                class="page-link bg-amber-600 hover:bg-amber-500 text-white font-semibold px-6 py-3.5 rounded-xl shadow-lg flex items-center justify-center gap-2 transition-all"
+                >Get Free Consultation
+                <i data-lucide="arrow-right" class="w-4 h-4"></i
+              ></a>
+              <a
+                href="tel:08032211668"
+                class="bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold px-6 py-3.5 rounded-xl flex items-center justify-center gap-2 transition-all"
+                ><i data-lucide="phone" class="w-4 h-4"></i> 0803 221 1668</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- FOOTER / CONTACT CTA -->
+    <footer id="contact" class="bg-slate-900 text-white pt-20 pb-12">
+      <div
+        class="max-w-7xl mx-auto px-6 grid lg:grid-cols-4 gap-12 pb-16 border-b border-slate-800"
+      >
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="h-12 flex items-center">
+              <img
+                src="./assets/images/company-logo/black-logo.jpeg"
+                alt="Gabosh Global Nig Ltd Logo"
+                class="h-full w-auto object-contain rounded-md"
+                onerror="
+                  this.onerror = null;
+                  this.parentElement.innerHTML =
+                    '<span class=\'text-xl font-extrabold text-white\'>GABOSH <span class=\'text-amber-500\'>GLOBAL</span></span>';
+                "
+              />
+            </div>
+            <span class="text-xl font-extrabold tracking-tight"
+              >GABOSH <span class="text-amber-500">GLOBAL</span></span
+            >
+          </div>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Delivering world-class structural engineering, comprehensive estate
+            management, and premium property sales. Built to last.
+          </p>
+          <div class="flex gap-2.5 pt-1">
+            <a
+              href="#"
+              class="w-9 h-9 rounded-lg bg-slate-800 hover:bg-amber-600 flex items-center justify-center transition"
+              aria-label="Facebook"
+              ><i data-lucide="facebook" class="w-4 h-4"></i
+            ></a>
+            <a
+              href="#"
+              class="w-9 h-9 rounded-lg bg-slate-800 hover:bg-amber-600 flex items-center justify-center transition"
+              aria-label="Instagram"
+              ><i data-lucide="instagram" class="w-4 h-4"></i
+            ></a>
+            <a
+              href="#"
+              class="w-9 h-9 rounded-lg bg-slate-800 hover:bg-amber-600 flex items-center justify-center transition"
+              aria-label="LinkedIn"
+              ><i data-lucide="linkedin" class="w-4 h-4"></i
+            ></a>
+            <a
+              href="https://wa.me/2348032211668"
+              target="_blank"
+              class="w-9 h-9 rounded-lg bg-emerald-600 hover:bg-emerald-500 flex items-center justify-center transition"
+              aria-label="WhatsApp"
+              ><i data-lucide="message-circle" class="w-4 h-4"></i
+            ></a>
+          </div>
+        </div>
+
+        <div>
+          <h5
+            class="text-sm font-bold uppercase tracking-wider text-amber-500 mb-4"
+          >
+            Engineering Services
+          </h5>
+          <ul class="space-y-2.5 text-xs text-slate-400">
+            <li>
+              <a href="construction" class="hover:text-white transition"
+                >Structural House Building</a
+              >
+            </li>
+            <li>
+              <a href="construction.html" class="hover:text-white transition"
+                >Architectural Blueprint Design</a
+              >
+            </li>
+            <li>
+              <a href="construction.html" class="hover:text-white transition"
+                >Soil & Site Inspections</a
+              >
+            </li>
+            <li>
+              <a href="management.html" class="hover:text-white transition"
+                >Estate Infrastructure Setup</a
+              >
+            </li>
+            <li>
+              <a href="aboutus.html" class="hover:text-white transition"
+                >About Us</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h5
+            class="text-sm font-bold uppercase tracking-wider text-amber-500 mb-4"
+          >
+            Real Estate & Trading
+          </h5>
+          <ul class="space-y-2.5 text-xs text-slate-400">
+            <li>
+              <a href="properties.html" class="hover:text-white transition"
+                >Buy Luxury Homes</a
+              >
+            </li>
+            <li>
+              <a href="properties.html" class="hover:text-white transition"
+                >Buy Verified Land Plots</a
+              >
+            </li>
+            <li>
+              <a href="properties.html" class="hover:text-white transition"
+                >Sell Property with Us</a
+              >
+            </li>
+            <li>
+              <a href="management.html" class="hover:text-white transition"
+                >Facility Management Solutions</a
+              >
+            </li>
+            <li>
+              <a href="portfolio.html" class="hover:text-white transition"
+                >View Projects</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h5
+            class="text-sm font-bold uppercase tracking-wider text-amber-500 mb-4"
+          >
+            Get In Touch
+          </h5>
+          <p class="text-xs text-slate-400 mb-2 flex items-center gap-2">
+            <i data-lucide="map-pin" class="w-4 h-4 text-amber-500"></i> Plot
+            29, Area 8, Garki. Abuja
+          </p>
+          <p class="text-xs text-slate-400 mb-2 flex items-center gap-2">
+            <i data-lucide="phone" class="w-4 h-4 text-amber-500"></i>
+            <a href="tel:08032211668" class="hover:text-white transition"
+              >08032211668</a
+            >
+          </p>
+          <p class="text-xs text-slate-400 mb-4 flex items-center gap-2">
+            <i data-lucide="mail" class="w-4 h-4 text-amber-500"></i>
+            <a
+              href="mailto:bolajiidiaro@gmail.com"
+              class="hover:text-white transition"
+              >bolajiidiaro@gmail.com</a
+            >
+          </p>
+          <a
+            href="contact.html"
+            class="block text-center bg-amber-600 hover:bg-amber-500 text-white font-semibold text-xs py-3 rounded-lg shadow-md transition"
+            >Open Contact Page</a
+          >
+        </div>
+      </div>
+
+      <div
+        class="max-w-7xl mx-auto px-6 pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500"
+      >
+        <p>© 2026 Gabosh Global Nig. Ltd. All rights reserved.</p>
+        <div class="flex gap-6 mt-4 sm:mt-0">
+          <a href="#" class="hover:text-slate-200">Privacy Policy</a>
+          <a href="#" class="hover:text-slate-200">Terms of Service</a>
+          <a href="#" class="hover:text-slate-200">COREN Licensing</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating buttons -->
+    <a
+      href="https://wa.me/2348032211668?text=Hello%20Gabosh%20Global!"
+      target="_blank"
+      class="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-emerald-600 hover:bg-emerald-500 shadow-2xl flex items-center justify-center text-white transition hover:scale-110"
+      aria-label="Chat on WhatsApp"
+    >
+      <i data-lucide="message-circle" class="w-7 h-7"></i>
+    </a>
+    <button
+      id="backTop"
+      class="fixed bottom-6 left-6 z-50 w-12 h-12 rounded-full bg-slate-900 hover:bg-slate-800 border border-slate-700 shadow-2xl hidden items-center justify-center text-white transition"
+      aria-label="Back to top"
+    >
+      <i data-lucide="arrow-up" class="w-5 h-5"></i>
+    </button>
+
+    <!-- Enquiry Modal -->
+    <div
+      id="enquiryModal"
+      class="fixed inset-0 z-[60] hidden items-center justify-center p-4"
+    >
+      <div
+        id="modalBackdrop"
+        class="absolute inset-0 bg-slate-900/80 backdrop-blur-sm"
+      ></div>
+      <div
+        class="relative bg-white rounded-2xl max-w-md w-full p-7 shadow-2xl border border-slate-200"
+      >
+        <button
+          onclick="closeEnquiry()"
+          class="absolute top-4 right-4 w-9 h-9 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center transition"
+          aria-label="Close"
+        >
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+        <div
+          class="w-12 h-12 rounded-xl bg-amber-50 flex items-center justify-center mb-4"
+        >
+          <i data-lucide="home" class="w-6 h-6 text-amber-600"></i>
+        </div>
+        <h3 class="text-xl font-bold text-slate-900">Enquire About Property</h3>
+        <p
+          id="enquiryTitle"
+          class="text-sm text-slate-500 mt-1 font-medium"
+        ></p>
+        <div class="space-y-3 mt-5">
+          <input
+            id="eq-name"
+            type="text"
+            placeholder="Your name"
+            class="w-full border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-amber-500"
+          />
+          <input
+            id="eq-phone"
+            type="tel"
+            placeholder="Phone / WhatsApp number"
+            class="w-full border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-amber-500"
+          />
+          <div class="grid grid-cols-2 gap-3">
+            <a
+              id="eq-whatsapp"
+              href="#"
+              target="_blank"
+              class="bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-sm py-3 rounded-xl flex items-center justify-center gap-2 transition"
+              ><i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp</a
+            >
+            <a
+              href="tel:08032211668"
+              class="bg-slate-900 hover:bg-slate-800 text-white font-semibold text-sm py-3 rounded-xl flex items-center justify-center gap-2 transition"
+              ><i data-lucide="phone" class="w-4 h-4"></i> Call Now</a
+            >
+          </div>
+          <p class="text-[11px] text-slate-400 text-center">
+            We respond within a few hours • Mon–Sat
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/script.js"></script>
+  </body>
+</html>

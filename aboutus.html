@@ -1,0 +1,1273 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gabosh-Global-Nig-Ltd | Engineering & Real Estate Solutions</title>
+    <meta
+      name="description"
+      content="About Us | Gabosh Global Nig Ltd - Who We Are, construction & real estate solutions in Abuja and Kwara State."
+    />
+    <!-- Tailwind CSS CDN -->
+    <link rel="stylesheet" href="./assets/css/output.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body class="bg-slate-50 text-slate-800 antialiased">
+    <!-- PAGE LOAD BAR -->
+    <div class="fixed top-0 left-0 right-0 z-[100] h-[3px] bg-transparent">
+      <div
+        id="pageLoader"
+        class="h-full w-0 bg-gradient-to-r from-amber-400 to-amber-600"
+      ></div>
+    </div>
+
+    <!-- NAVIGATION BAR -->
+    <nav
+      class="fixed top-0 left-0 right-0 z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between"
+      >
+        <!-- Brand Logo -->
+        <div class="flex items-center gap-3">
+          <!-- Brand Logo Integration -->
+          <a href="index.html" class="flex items-center gap-3 group">
+            <div
+              class="h-12 py-1 flex items-center justify-center rounded-lg overflow-hidden transition-transform group-hover:scale-105"
+            >
+              <img
+                src="./assets/images/company-logo/black-logo.jpeg"
+                alt="Gabosh Global Nig Ltd Logo"
+                class="h-full w-auto object-contain rounded-md"
+                onerror="
+                  this.onerror = null;
+                  this.parentElement.innerHTML =
+                    '<div class=\'h-10 px-3 bg-amber-600 rounded flex items-center justify-center font-extrabold text-white text-lg tracking-wider\'>GABOSH</div>';
+                "
+              />
+            </div>
+          </a>
+
+          <div>
+            <span class="text-xl font-extrabold text-white tracking-tight"
+              >GABOSH <span class="text-amber-500">GLOBAL</span></span
+            >
+            <span
+              class="block text-[10px] tracking-widest text-slate-400 uppercase font-semibold"
+              >Build • Manage • Trade</span
+            >
+          </div>
+        </div>
+
+        <!-- Navigation Links -->
+        <div
+          class="hidden lg:flex items-center gap-7 font-medium text-sm text-slate-300"
+        >
+          <a
+            href="index.html"
+            class="nav-link hover:text-amber-500 transition-colors"
+            >Home</a
+          >
+          <a
+            href="aboutus.html"
+            class="nav-link hover:text-amber-500 transition-colors"
+            >About Us</a
+          >
+          <a
+            href="services.html"
+            class="nav-link hover:text-amber-500 transition-colors"
+            >Services</a
+          >
+          <a
+            href="properties.html"
+            class="nav-link hover:text-amber-500 transition-colors"
+            >Buy & Sell</a
+          >
+          <a
+            href="construction.html"
+            class="nav-link hover:text-amber-500 transition-colors"
+            >Construction & Blueprint</a
+          >
+          <a
+            href="management.html"
+            class="nav-link hover:text-amber-500 transition-colors"
+            >Estate Management</a
+          >
+          <a
+            href="portfolio.html"
+            class="nav-link hover:text-amber-500 transition-colors"
+            >Projects</a
+          >
+        </div>
+
+        <!-- CTA Button -->
+        <div class="flex items-center gap-4">
+          <a
+            href="contact.html"
+            class="sm:inline-flex bg-amber-600 hover:bg-amber-500 text-white font-semibold text-sm px-5 py-2.5 rounded-lg shadow-md transition-all duration-200"
+          >
+            Get Free Consultation
+          </a>
+          <button
+            id="menuBtn"
+            class="lg:hidden text-slate-300 hover:text-white transition"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+          >
+            <i data-lucide="menu" class="w-6 h-6" id="menuIconOpen"></i>
+            <i data-lucide="x" class="w-6 h-6 hidden" id="menuIconClose"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobileMenu"
+        class="lg:hidden bg-slate-900 border-t border-slate-800"
+      >
+        <div
+          class="px-6 py-4 flex flex-col gap-1 text-sm font-medium text-slate-300 max-h-[70vh] overflow-y-auto"
+        >
+          <a
+            href="index.html"
+            class="mobile-link py-2.5 px-3 rounded-lg hover:bg-slate-800 hover:text-amber-500 transition"
+            >Home</a
+          >
+          <a
+            href="aboutus.html"
+            class="mobile-link py-2.5 px-3 rounded-lg hover:bg-slate-800 hover:text-amber-500 transition"
+            >About Us</a
+          >
+          <a
+            href="services.html"
+            class="mobile-link py-2.5 px-3 rounded-lg hover:bg-slate-800 hover:text-amber-500 transition"
+            >Services</a
+          >
+          <a
+            href="properties.html"
+            class="mobile-link py-2.5 px-3 rounded-lg hover:bg-slate-800 hover:text-amber-500 transition"
+            >Buy & Sell</a
+          >
+          <a
+            href="construction.html"
+            class="mobile-link py-2.5 px-3 rounded-lg hover:bg-slate-800 hover:text-amber-500 transition"
+            >Construction & Blueprint</a
+          >
+          <a
+            href="management.html"
+            class="mobile-link py-2.5 px-3 rounded-lg hover:bg-slate-800 hover:text-amber-500 transition"
+            >Estate Management</a
+          >
+          <a
+            href="portfolio.html"
+            class="mobile-link py-2.5 px-3 rounded-lg hover:bg-slate-800 hover:text-amber-500 transition"
+            >Projects</a
+          >
+          <a
+            href="contact.html"
+            class="mobile-link mt-2 bg-amber-600 hover:bg-amber-500 text-white font-semibold text-center px-5 py-3 rounded-lg transition"
+            >Get Free Consultation</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <div id="page-about" class="page">
+      <!-- PAGE HERO -->
+      <section
+        class="relative pt-40 pb-24 bg-slate-900 text-white overflow-hidden"
+      >
+        <img
+          src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=2000"
+          class="absolute inset-0 w-full h-full object-cover opacity-30"
+          alt="Construction site"
+        />
+        <div
+          class="absolute inset-0 bg-gradient-to-b from-slate-900/70 via-slate-900/80 to-slate-900"
+        ></div>
+        <div class="relative max-w-7xl mx-auto px-6 z-10">
+          <!-- Breadcrumb -->
+          <nav
+            class="flex items-center gap-2 text-xs text-slate-400 mb-6 font-medium"
+          >
+            <a href="index.html" class="hover:text-amber-500 transition"
+              >Home</a
+            >
+            <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+            <span class="text-amber-500">About Us</span>
+          </nav>
+          <div class="max-w-3xl">
+            <div
+              class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs font-semibold uppercase tracking-wider mb-6"
+            >
+              <i data-lucide="building" class="w-4 h-4"></i> Who We Are
+            </div>
+            <h1
+              class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight mb-6"
+            >
+              Engineering Vision. <br />
+              <span
+                class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-600"
+                >Developing Assets.</span
+              >
+            </h1>
+            <p class="text-slate-300 text-lg max-w-2xl leading-relaxed">
+              Since 2012, Gabosh Global Nigeria Limited has been a trusted
+              partner in Nigeria's construction and real estate sector —
+              delivering projects that meet the highest industry standards from
+              Abuja to Kwara State and beyond.
+            </p>
+            <div class="flex flex-wrap gap-4 pt-8">
+              <button
+                data-scroll="about-overview"
+                class="scroll-btn bg-amber-600 hover:bg-amber-500 text-white font-semibold px-6 py-3.5 rounded-xl shadow-lg flex items-center gap-2 transition-all"
+              >
+                Read Our Story
+                <i data-lucide="arrow-down" class="w-4 h-4"></i>
+              </button>
+              <a
+                href="contact.html"
+                class="bg-slate-800/80 hover:bg-slate-800 border border-slate-700 text-white font-semibold px-6 py-3.5 rounded-xl transition-all"
+              >
+                Partner With Us
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- QUICK FACTS BAR -->
+      <section class="bg-slate-900 border-t border-slate-800 py-10">
+        <div
+          class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center"
+        >
+          <div>
+            <p class="text-3xl sm:text-4xl font-extrabold text-amber-500">
+              <span data-counter="2012" data-plain="true">2012</span>
+            </p>
+            <p
+              class="text-xs uppercase tracking-wider text-slate-400 font-semibold mt-1"
+            >
+              Year Established
+            </p>
+          </div>
+          <div>
+            <p class="text-3xl sm:text-4xl font-extrabold text-white">
+              <span data-counter="14">0</span>+
+            </p>
+            <p
+              class="text-xs uppercase tracking-wider text-slate-400 font-semibold mt-1"
+            >
+              Years of Excellence
+            </p>
+          </div>
+          <div>
+            <p class="text-3xl sm:text-4xl font-extrabold text-amber-500">
+              <span data-counter="2">0</span>
+            </p>
+            <p
+              class="text-xs uppercase tracking-wider text-slate-400 font-semibold mt-1"
+            >
+              Operational Bases (Abuja & Kwara)
+            </p>
+          </div>
+          <div>
+            <p class="text-3xl sm:text-4xl font-extrabold text-white">
+              <span data-counter="6">0</span>
+            </p>
+            <p
+              class="text-xs uppercase tracking-wider text-slate-400 font-semibold mt-1"
+            >
+              Core Service Lines
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- COMPANY OVERVIEW -->
+      <section
+        id="about-overview"
+        class="py-24 max-w-7xl mx-auto px-6 scroll-mt-24"
+      >
+        <div class="grid lg:grid-cols-12 gap-14 items-start">
+          <!-- Image Column -->
+          <div class="lg:col-span-5 reveal">
+            <div class="relative">
+              <div
+                class="rounded-2xl overflow-hidden shadow-2xl border border-slate-200"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=1000"
+                  alt="GGNL construction project"
+                  class="w-full h-[420px] object-cover"
+                />
+              </div>
+              <div
+                class="absolute -bottom-6 -right-4 sm:-right-6 bg-slate-900 text-white p-6 rounded-2xl shadow-xl border border-slate-800 max-w-[240px]"
+              >
+                <div class="flex items-center gap-3 mb-2">
+                  <div
+                    class="w-10 h-10 bg-amber-500/15 rounded-lg flex items-center justify-center text-amber-500"
+                  >
+                    <i data-lucide="award" class="w-5 h-5"></i>
+                  </div>
+                  <p class="text-2xl font-extrabold text-amber-500">
+                    Est. 2012
+                  </p>
+                </div>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                  Over a decade delivering trusted construction &amp; real
+                  estate solutions.
+                </p>
+              </div>
+              <div
+                class="absolute -top-5 -left-4 sm:-left-6 bg-white p-4 rounded-xl shadow-lg border border-slate-200 flex items-center gap-3"
+              >
+                <div
+                  class="w-10 h-10 bg-amber-50 rounded-lg flex items-center justify-center text-amber-600"
+                >
+                  <i data-lucide="map-pin" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <p class="text-xs font-bold text-slate-900">Abuja • Kwara</p>
+                  <p
+                    class="text-[10px] text-slate-500 uppercase tracking-wider font-semibold"
+                  >
+                    Strong Regional Presence
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Promise card -->
+            <div
+              class="mt-14 bg-slate-900 rounded-2xl p-7 text-white border border-slate-800"
+            >
+              <h4 class="font-bold mb-3 flex items-center gap-2">
+                <i data-lucide="quote" class="w-5 h-5 text-amber-500"></i> Our
+                Promise
+              </h4>
+              <p class="text-sm text-slate-300 leading-relaxed italic">
+                "We build for comfort, quality, and long-term value — no
+                shortcuts, no stories. Every block accounted for."
+              </p>
+              <p class="text-xs text-slate-500 mt-3 font-semibold">
+                — Management, GGNL
+              </p>
+            </div>
+          </div>
+
+          <!-- Text Column -->
+          <div class="lg:col-span-7 reveal">
+            <h2
+              class="text-xs font-extrabold text-amber-600 uppercase tracking-widest mb-2"
+            >
+              Who We Are
+            </h2>
+            <h3 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">
+              Company Overview
+            </h3>
+
+            <div class="space-y-5 text-slate-600 leading-relaxed">
+              <p>
+                Established in <strong class="text-slate-900">2012</strong>,
+                <strong class="text-slate-900"
+                  >Gabosh Global Nigeria Limited (GGNL)</strong
+                >
+                is a leading construction and real estate company with a strong
+                presence in
+                <strong class="text-slate-900">Abuja</strong> and
+                <strong class="text-slate-900">Kwara State</strong>. In addition
+                to its operational base in these regions, the company is
+                strategically positioned to expand its footprint across Nigeria.
+              </p>
+              <p>
+                GGNL builds for
+                <span class="text-amber-700 font-semibold"
+                  >comfort, quality, and long-term value</span
+                >. Through a combination of on-site professional management and
+                office-based expertise in engineering, design, and project
+                planning, supported by modern tools and systems, the company
+                consistently delivers projects that meet high industry
+                standards.
+              </p>
+              <p>
+                The company specializes in a broad range of services, including
+                general building contracting, real estate agency services,
+                property consultancy, project supervision, building materials
+                supply, and interior and exterior design. GGNL is equipped to
+                handle diverse construction and development projects, providing
+                tailored solutions that align with client needs and project
+                specifications.
+              </p>
+              <p>
+                To ensure efficient project execution and logistical support,
+                GGNL leverages reliable access to construction equipment,
+                materials, and supply chains, enabling seamless operations
+                regardless of project scale or location.
+              </p>
+              <p>
+                Driven by innovation and a commitment to excellence, GGNL
+                continuously adopts modern construction techniques and best
+                practices to improve efficiency, durability, and overall project
+                outcomes. This forward-thinking approach has positioned the
+                company as a trusted partner in Nigeria's construction and real
+                estate sector.
+              </p>
+              <p>
+                With a clear focus on quality delivery, client satisfaction, and
+                strategic growth, Gabosh Global Nigeria Limited remains
+                committed to strengthening its presence in the industry while
+                exploring opportunities for expansion both locally and
+                internationally.
+              </p>
+            </div>
+
+            <!-- Key Highlights -->
+            <div class="grid sm:grid-cols-2 gap-4 mt-8">
+              <div
+                class="flex items-start gap-3 p-4 bg-white rounded-xl border border-slate-200"
+              >
+                <i
+                  data-lucide="check-circle-2"
+                  class="w-5 h-5 text-amber-600 shrink-0 mt-0.5"
+                ></i>
+                <p class="text-sm text-slate-700 font-medium">
+                  On-site professional management
+                </p>
+              </div>
+              <div
+                class="flex items-start gap-3 p-4 bg-white rounded-xl border border-slate-200"
+              >
+                <i
+                  data-lucide="check-circle-2"
+                  class="w-5 h-5 text-amber-600 shrink-0 mt-0.5"
+                ></i>
+                <p class="text-sm text-slate-700 font-medium">
+                  In-house engineering &amp; design expertise
+                </p>
+              </div>
+              <div
+                class="flex items-start gap-3 p-4 bg-white rounded-xl border border-slate-200"
+              >
+                <i
+                  data-lucide="check-circle-2"
+                  class="w-5 h-5 text-amber-600 shrink-0 mt-0.5"
+                ></i>
+                <p class="text-sm text-slate-700 font-medium">
+                  Reliable equipment &amp; supply chains
+                </p>
+              </div>
+              <div
+                class="flex items-start gap-3 p-4 bg-white rounded-xl border border-slate-200"
+              >
+                <i
+                  data-lucide="check-circle-2"
+                  class="w-5 h-5 text-amber-600 shrink-0 mt-0.5"
+                ></i>
+                <p class="text-sm text-slate-700 font-medium">
+                  Modern construction techniques
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MISSION / VISION / VALUES -->
+      <section class="py-20 bg-slate-100 border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="text-center max-w-3xl mx-auto mb-14 reveal">
+            <h2
+              class="text-xs font-extrabold text-amber-600 uppercase tracking-widest mb-2"
+            >
+              What Drives Us
+            </h2>
+            <h3 class="text-3xl sm:text-4xl font-bold text-slate-900">
+              Our Mission, Vision &amp; Values
+            </h3>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-8">
+            <!-- Mission -->
+            <div
+              class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 reveal"
+            >
+              <div
+                class="w-14 h-14 bg-amber-50 rounded-xl flex items-center justify-center text-amber-600 mb-6"
+              >
+                <i data-lucide="target" class="w-8 h-8"></i>
+              </div>
+              <h4 class="text-xl font-bold text-slate-900 mb-3">Our Mission</h4>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                To build for comfort, quality, and long-term value — delivering
+                construction and real estate solutions that consistently meet
+                high industry standards and align with our clients' needs.
+              </p>
+            </div>
+
+            <!-- Vision -->
+            <div
+              class="bg-slate-900 p-8 rounded-2xl border border-slate-800 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 reveal"
+            >
+              <div
+                class="w-14 h-14 bg-amber-500/15 rounded-xl flex items-center justify-center text-amber-500 mb-6"
+              >
+                <i data-lucide="eye" class="w-8 h-8"></i>
+              </div>
+              <h4 class="text-xl font-bold text-white mb-3">Our Vision</h4>
+              <p class="text-slate-300 text-sm leading-relaxed">
+                To be Nigeria's most trusted construction and real estate
+                partner, expanding our footprint across the nation and
+                internationally through strategic, sustainable growth.
+              </p>
+            </div>
+
+            <!-- Values -->
+            <div
+              class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 reveal"
+            >
+              <div
+                class="w-14 h-14 bg-slate-100 rounded-xl flex items-center justify-center text-slate-900 mb-6"
+              >
+                <i data-lucide="gem" class="w-8 h-8"></i>
+              </div>
+              <h4 class="text-xl font-bold text-slate-900 mb-3">
+                Our Core Values
+              </h4>
+              <ul class="text-slate-600 text-sm leading-relaxed space-y-2">
+                <li class="flex items-center gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-amber-600"></i>
+                  Quality Delivery
+                </li>
+                <li class="flex items-center gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-amber-600"></i>
+                  Client Satisfaction
+                </li>
+                <li class="flex items-center gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-amber-600"></i>
+                  Innovation &amp; Excellence
+                </li>
+                <li class="flex items-center gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-amber-600"></i>
+                  Strategic Growth
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SPECIALISATIONS -->
+      <section class="py-24 max-w-7xl mx-auto px-6">
+        <div
+          class="flex flex-col md:flex-row md:items-end justify-between mb-14 reveal"
+        >
+          <div class="max-w-2xl">
+            <h2
+              class="text-xs font-extrabold text-amber-600 uppercase tracking-widest mb-2"
+            >
+              What We Do
+            </h2>
+            <h3 class="text-3xl sm:text-4xl font-bold text-slate-900">
+              Our Areas of Specialisation
+            </h3>
+            <p class="text-slate-600 mt-4">
+              GGNL is equipped to handle diverse construction and development
+              projects, providing tailored solutions that align with client
+              needs and project specifications.
+            </p>
+          </div>
+          <a
+            href="services.html"
+            class="mt-6 md:mt-0 inline-flex items-center gap-2 text-amber-600 font-bold text-sm hover:gap-3 transition-all"
+          >
+            Open Full Services Page
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div
+            class="group bg-white p-7 rounded-2xl border border-slate-200 shadow-sm hover:border-amber-500 hover:shadow-xl transition-all duration-300 reveal"
+          >
+            <div class="flex items-center justify-between mb-5">
+              <div
+                class="w-12 h-12 bg-amber-50 rounded-xl flex items-center justify-center text-amber-600 group-hover:bg-amber-600 group-hover:text-white transition"
+              >
+                <i data-lucide="hard-hat" class="w-6 h-6"></i>
+              </div>
+              <span class="text-xs font-extrabold text-slate-300">01</span>
+            </div>
+            <h4 class="text-lg font-bold text-slate-900 mb-2">
+              General Building Contracting
+            </h4>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Turnkey construction of residential, commercial, and industrial
+              structures delivered to strict engineering standards.
+            </p>
+          </div>
+          <div
+            class="group bg-white p-7 rounded-2xl border border-slate-200 shadow-sm hover:border-amber-500 hover:shadow-xl transition-all duration-300 reveal"
+          >
+            <div class="flex items-center justify-between mb-5">
+              <div
+                class="w-12 h-12 bg-amber-50 rounded-xl flex items-center justify-center text-amber-600 group-hover:bg-amber-600 group-hover:text-white transition"
+              >
+                <i data-lucide="key-round" class="w-6 h-6"></i>
+              </div>
+              <span class="text-xs font-extrabold text-slate-300">02</span>
+            </div>
+            <h4 class="text-lg font-bold text-slate-900 mb-2">
+              Real Estate Agency Services
+            </h4>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Seamless buying, selling, and letting of verified lands, homes,
+              and commercial spaces with guaranteed legal titling.
+            </p>
+          </div>
+          <div
+            class="group bg-white p-7 rounded-2xl border border-slate-200 shadow-sm hover:border-amber-500 hover:shadow-xl transition-all duration-300 reveal"
+          >
+            <div class="flex items-center justify-between mb-5">
+              <div
+                class="w-12 h-12 bg-amber-50 rounded-xl flex items-center justify-center text-amber-600 group-hover:bg-amber-600 group-hover:text-white transition"
+              >
+                <i data-lucide="briefcase" class="w-6 h-6"></i>
+              </div>
+              <span class="text-xs font-extrabold text-slate-300">03</span>
+            </div>
+            <h4 class="text-lg font-bold text-slate-900 mb-2">
+              Property Consultancy
+            </h4>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Expert advisory on property investment, valuation, development
+              feasibility, and portfolio strategy.
+            </p>
+          </div>
+          <div
+            class="group bg-white p-7 rounded-2xl border border-slate-200 shadow-sm hover:border-amber-500 hover:shadow-xl transition-all duration-300 reveal"
+          >
+            <div class="flex items-center justify-between mb-5">
+              <div
+                class="w-12 h-12 bg-amber-50 rounded-xl flex items-center justify-center text-amber-600 group-hover:bg-amber-600 group-hover:text-white transition"
+              >
+                <i data-lucide="clipboard-check" class="w-6 h-6"></i>
+              </div>
+              <span class="text-xs font-extrabold text-slate-300">04</span>
+            </div>
+            <h4 class="text-lg font-bold text-slate-900 mb-2">
+              Project Supervision
+            </h4>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              On-site professional management ensuring projects stay on
+              schedule, within budget, and to specification.
+            </p>
+          </div>
+          <div
+            class="group bg-white p-7 rounded-2xl border border-slate-200 shadow-sm hover:border-amber-500 hover:shadow-xl transition-all duration-300 reveal"
+          >
+            <div class="flex items-center justify-between mb-5">
+              <div
+                class="w-12 h-12 bg-amber-50 rounded-xl flex items-center justify-center text-amber-600 group-hover:bg-amber-600 group-hover:text-white transition"
+              >
+                <i data-lucide="truck" class="w-6 h-6"></i>
+              </div>
+              <span class="text-xs font-extrabold text-slate-300">05</span>
+            </div>
+            <h4 class="text-lg font-bold text-slate-900 mb-2">
+              Building Materials Supply
+            </h4>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Reliable access to quality construction materials and supply
+              chains regardless of project scale or location.
+            </p>
+          </div>
+          <div
+            class="group bg-white p-7 rounded-2xl border border-slate-200 shadow-sm hover:border-amber-500 hover:shadow-xl transition-all duration-300 reveal"
+          >
+            <div class="flex items-center justify-between mb-5">
+              <div
+                class="w-12 h-12 bg-amber-50 rounded-xl flex items-center justify-center text-amber-600 group-hover:bg-amber-600 group-hover:text-white transition"
+              >
+                <i data-lucide="palette" class="w-6 h-6"></i>
+              </div>
+              <span class="text-xs font-extrabold text-slate-300">06</span>
+            </div>
+            <h4 class="text-lg font-bold text-slate-900 mb-2">
+              Interior &amp; Exterior Design
+            </h4>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Thoughtful, functional design that brings comfort and lasting
+              value to every space we create.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- OUR PRESENCE -->
+      <section class="blueprint py-24 text-white relative overflow-hidden">
+        <div
+          class="absolute -top-32 -right-32 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl"
+        ></div>
+        <div class="max-w-7xl mx-auto px-6 relative">
+          <div class="grid lg:grid-cols-2 gap-14 items-center">
+            <div class="reveal">
+              <h2
+                class="text-xs font-extrabold text-amber-500 uppercase tracking-widest mb-2"
+              >
+                Our Presence
+              </h2>
+              <h3 class="text-3xl sm:text-4xl font-bold mb-6">
+                Rooted in Abuja &amp; Kwara. <br /><span class="text-amber-500"
+                  >Expanding Across Nigeria.</span
+                >
+              </h3>
+              <p class="text-slate-300 leading-relaxed mb-8">
+                With a strong operational base in the Federal Capital Territory
+                and Kwara State, GGNL is strategically positioned to expand its
+                footprint across Nigeria — and explore opportunities for growth
+                internationally.
+              </p>
+              <div class="space-y-4">
+                <div
+                  class="flex items-start gap-4 p-5 bg-white/5 border border-white/10 rounded-xl backdrop-blur"
+                >
+                  <div
+                    class="w-11 h-11 bg-amber-600 rounded-lg flex items-center justify-center shrink-0"
+                  >
+                    <i data-lucide="map-pin" class="w-5 h-5 text-white"></i>
+                  </div>
+                  <div>
+                    <h5 class="font-bold">Abuja — Head Office</h5>
+                    <p class="text-sm text-slate-400 mt-1">
+                      Plot 29, Area 8, Garki, Abuja, FCT
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="flex items-start gap-4 p-5 bg-white/5 border border-white/10 rounded-xl backdrop-blur"
+                >
+                  <div
+                    class="w-11 h-11 bg-slate-700 rounded-lg flex items-center justify-center shrink-0"
+                  >
+                    <i data-lucide="map-pin" class="w-5 h-5 text-amber-500"></i>
+                  </div>
+                  <div>
+                    <h5 class="font-bold">Kwara State — Regional Operations</h5>
+                    <p class="text-sm text-slate-400 mt-1">
+                      Ilorin and surrounding developments
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="flex items-start gap-4 p-5 border border-dashed border-amber-500/40 rounded-xl"
+                >
+                  <div
+                    class="w-11 h-11 bg-amber-500/15 rounded-lg flex items-center justify-center shrink-0"
+                  >
+                    <i data-lucide="globe" class="w-5 h-5 text-amber-500"></i>
+                  </div>
+                  <div>
+                    <h5 class="font-bold">Nationwide &amp; International</h5>
+                    <p class="text-sm text-slate-400 mt-1">
+                      Strategic expansion across Nigeria and beyond
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Timeline -->
+            <div class="reveal">
+              <div class="timeline relative space-y-10 md:space-y-14">
+                <div
+                  class="relative pl-14 md:pl-0 md:grid md:grid-cols-2 md:gap-10"
+                >
+                  <div
+                    class="absolute left-0 md:left-1/2 md:-translate-x-1/2 w-10 h-10 bg-amber-600 rounded-full border-4 border-slate-900 flex items-center justify-center z-10"
+                  >
+                    <i data-lucide="flag" class="w-4 h-4 text-white"></i>
+                  </div>
+                  <div class="md:text-right md:pr-4">
+                    <p class="text-amber-500 font-extrabold text-lg">2012</p>
+                    <h5 class="font-bold">Company Established</h5>
+                    <p class="text-sm text-slate-400 mt-1">
+                      Gabosh Global Nigeria Limited is founded with a mission to
+                      build for comfort, quality, and value.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="relative pl-14 md:pl-0 md:grid md:grid-cols-2 md:gap-10"
+                >
+                  <div
+                    class="absolute left-0 md:left-1/2 md:-translate-x-1/2 w-10 h-10 bg-slate-800 rounded-full border-4 border-slate-900 flex items-center justify-center z-10"
+                  >
+                    <i
+                      data-lucide="building-2"
+                      class="w-4 h-4 text-amber-500"
+                    ></i>
+                  </div>
+                  <div class="md:col-start-2 md:pl-4">
+                    <p class="text-amber-500 font-extrabold text-lg">Growth</p>
+                    <h5 class="font-bold">Abuja &amp; Kwara Operations</h5>
+                    <p class="text-sm text-slate-400 mt-1">
+                      Strong regional presence built through consistent,
+                      high-standard project delivery.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="relative pl-14 md:pl-0 md:grid md:grid-cols-2 md:gap-10"
+                >
+                  <div
+                    class="absolute left-0 md:left-1/2 md:-translate-x-1/2 w-10 h-10 bg-slate-800 rounded-full border-4 border-slate-900 flex items-center justify-center z-10"
+                  >
+                    <i
+                      data-lucide="lightbulb"
+                      class="w-4 h-4 text-amber-500"
+                    ></i>
+                  </div>
+                  <div class="md:text-right md:pr-4">
+                    <p class="text-amber-500 font-extrabold text-lg">
+                      Innovation
+                    </p>
+                    <h5 class="font-bold">Modern Techniques Adopted</h5>
+                    <p class="text-sm text-slate-400 mt-1">
+                      Continuous adoption of modern tools, systems, and best
+                      practices for durability and efficiency.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="relative pl-14 md:pl-0 md:grid md:grid-cols-2 md:gap-10"
+                >
+                  <div
+                    class="absolute left-0 md:left-1/2 md:-translate-x-1/2 w-10 h-10 bg-amber-600 rounded-full border-4 border-slate-900 flex items-center justify-center z-10"
+                  >
+                    <i data-lucide="rocket" class="w-4 h-4 text-white"></i>
+                  </div>
+                  <div class="md:col-start-2 md:pl-4">
+                    <p class="text-amber-500 font-extrabold text-lg">
+                      Today &amp; Beyond
+                    </p>
+                    <h5 class="font-bold">
+                      Nationwide &amp; International Expansion
+                    </h5>
+                    <p class="text-sm text-slate-400 mt-1">
+                      Strengthening industry presence while exploring local and
+                      international opportunities.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- OUR APPROACH -->
+      <section class="py-24 max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-3xl mx-auto mb-14 reveal">
+          <h2
+            class="text-xs font-extrabold text-amber-600 uppercase tracking-widest mb-2"
+          >
+            Our Approach
+          </h2>
+          <h3 class="text-3xl sm:text-4xl font-bold text-slate-900">
+            How We Deliver High-Standard Projects
+          </h3>
+          <p class="text-slate-600 mt-4">
+            A forward-thinking approach combining people, process, and
+            technology — improving efficiency, durability, and overall project
+            outcomes.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div
+            class="relative bg-white p-7 rounded-2xl border border-slate-200 shadow-sm reveal"
+          >
+            <span
+              class="absolute top-5 right-6 text-5xl font-extrabold text-slate-100"
+              >1</span
+            >
+            <div
+              class="w-12 h-12 bg-amber-50 rounded-xl flex items-center justify-center text-amber-600 mb-5 relative"
+            >
+              <i data-lucide="users" class="w-6 h-6"></i>
+            </div>
+            <h4 class="font-bold text-slate-900 mb-2">
+              On-Site Professional Management
+            </h4>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Experienced supervisors on the ground ensuring quality, safety,
+              and timelines.
+            </p>
+          </div>
+          <div
+            class="relative bg-white p-7 rounded-2xl border border-slate-200 shadow-sm reveal"
+          >
+            <span
+              class="absolute top-5 right-6 text-5xl font-extrabold text-slate-100"
+              >2</span
+            >
+            <div
+              class="w-12 h-12 bg-amber-50 rounded-xl flex items-center justify-center text-amber-600 mb-5 relative"
+            >
+              <i data-lucide="drafting-compass" class="w-6 h-6"></i>
+            </div>
+            <h4 class="font-bold text-slate-900 mb-2">
+              Engineering, Design &amp; Planning
+            </h4>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Office-based expertise in structural engineering, design, and
+              project planning.
+            </p>
+          </div>
+          <div
+            class="relative bg-white p-7 rounded-2xl border border-slate-200 shadow-sm reveal"
+          >
+            <span
+              class="absolute top-5 right-6 text-5xl font-extrabold text-slate-100"
+              >3</span
+            >
+            <div
+              class="w-12 h-12 bg-amber-50 rounded-xl flex items-center justify-center text-amber-600 mb-5 relative"
+            >
+              <i data-lucide="cpu" class="w-6 h-6"></i>
+            </div>
+            <h4 class="font-bold text-slate-900 mb-2">
+              Modern Tools &amp; Systems
+            </h4>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Contemporary construction techniques and technology for better
+              outcomes.
+            </p>
+          </div>
+          <div
+            class="relative bg-white p-7 rounded-2xl border border-slate-200 shadow-sm reveal"
+          >
+            <span
+              class="absolute top-5 right-6 text-5xl font-extrabold text-slate-100"
+              >4</span
+            >
+            <div
+              class="w-12 h-12 bg-amber-50 rounded-xl flex items-center justify-center text-amber-600 mb-5 relative"
+            >
+              <i data-lucide="package-check" class="w-6 h-6"></i>
+            </div>
+            <h4 class="font-bold text-slate-900 mb-2">
+              Reliable Logistics &amp; Supply
+            </h4>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Dependable access to equipment, materials, and supply chains at
+              any scale or location.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA BANNER -->
+      <section class="pb-24 max-w-7xl mx-auto px-6">
+        <div
+          class="relative overflow-hidden rounded-3xl bg-slate-900 text-white px-8 py-14 sm:px-14 reveal"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1600"
+            class="absolute inset-0 w-full h-full object-cover opacity-20"
+            alt=""
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900/90 to-slate-900/40"
+          ></div>
+          <div class="relative grid lg:grid-cols-3 gap-8 items-center">
+            <div class="lg:col-span-2">
+              <h3 class="text-3xl sm:text-4xl font-extrabold mb-4">
+                Ready to Build Something That Lasts?
+              </h3>
+              <p class="text-slate-300 max-w-xl">
+                Whether you're planning a new build, buying verified land, or
+                need a trusted partner to manage your estate — GGNL is ready to
+                deliver.
+              </p>
+            </div>
+            <div class="flex flex-col sm:flex-row lg:flex-col gap-4">
+              <a
+                href="#/contact"
+                data-page="contact"
+                class="page-link bg-amber-600 hover:bg-amber-500 text-white font-semibold px-6 py-3.5 rounded-xl shadow-lg flex items-center justify-center gap-2 transition-all"
+              >
+                Get Free Consultation
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </a>
+              <a
+                href="tel:08032211668"
+                class="bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold px-6 py-3.5 rounded-xl flex items-center justify-center gap-2 transition-all"
+              >
+                <i data-lucide="phone" class="w-4 h-4"></i> 0803 221 1668
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- FOOTER / CONTACT CTA -->
+    <footer id="contact" class="bg-slate-900 text-white pt-20 pb-12">
+      <div
+        class="max-w-7xl mx-auto px-6 grid lg:grid-cols-4 gap-12 pb-16 border-b border-slate-800"
+      >
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="h-12 flex items-center">
+              <img
+                src="./assets/images/company-logo/black-logo.jpeg"
+                alt="Gabosh Global Nig Ltd Logo"
+                class="h-full w-auto object-contain rounded-md"
+                onerror="
+                  this.onerror = null;
+                  this.parentElement.innerHTML =
+                    '<span class=\'text-xl font-extrabold text-white\'>GABOSH <span class=\'text-amber-500\'>GLOBAL</span></span>';
+                "
+              />
+            </div>
+            <span class="text-xl font-extrabold tracking-tight"
+              >GABOSH <span class="text-amber-500">GLOBAL</span></span
+            >
+          </div>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Delivering world-class structural engineering, comprehensive estate
+            management, and premium property sales. Built to last.
+          </p>
+          <div class="flex gap-2.5 pt-1">
+            <a
+              href="#"
+              class="w-9 h-9 rounded-lg bg-slate-800 hover:bg-amber-600 flex items-center justify-center transition"
+              aria-label="Facebook"
+              ><i data-lucide="facebook" class="w-4 h-4"></i
+            ></a>
+            <a
+              href="#"
+              class="w-9 h-9 rounded-lg bg-slate-800 hover:bg-amber-600 flex items-center justify-center transition"
+              aria-label="Instagram"
+              ><i data-lucide="instagram" class="w-4 h-4"></i
+            ></a>
+            <a
+              href="#"
+              class="w-9 h-9 rounded-lg bg-slate-800 hover:bg-amber-600 flex items-center justify-center transition"
+              aria-label="LinkedIn"
+              ><i data-lucide="linkedin" class="w-4 h-4"></i
+            ></a>
+            <a
+              href="https://wa.me/2348032211668"
+              target="_blank"
+              class="w-9 h-9 rounded-lg bg-emerald-600 hover:bg-emerald-500 flex items-center justify-center transition"
+              aria-label="WhatsApp"
+              ><i data-lucide="message-circle" class="w-4 h-4"></i
+            ></a>
+          </div>
+        </div>
+
+        <div>
+          <h5
+            class="text-sm font-bold uppercase tracking-wider text-amber-500 mb-4"
+          >
+            Engineering Services
+          </h5>
+          <ul class="space-y-2.5 text-xs text-slate-400">
+            <li>
+              <a href="construction" class="hover:text-white transition"
+                >Structural House Building</a
+              >
+            </li>
+            <li>
+              <a href="construction.html" class="hover:text-white transition"
+                >Architectural Blueprint Design</a
+              >
+            </li>
+            <li>
+              <a href="construction.html" class="hover:text-white transition"
+                >Soil & Site Inspections</a
+              >
+            </li>
+            <li>
+              <a href="management.html" class="hover:text-white transition"
+                >Estate Infrastructure Setup</a
+              >
+            </li>
+            <li>
+              <a href="aboutus.html" class="hover:text-white transition"
+                >About Us</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h5
+            class="text-sm font-bold uppercase tracking-wider text-amber-500 mb-4"
+          >
+            Real Estate & Trading
+          </h5>
+          <ul class="space-y-2.5 text-xs text-slate-400">
+            <li>
+              <a href="properties.html" class="hover:text-white transition"
+                >Buy Luxury Homes</a
+              >
+            </li>
+            <li>
+              <a href="properties.html" class="hover:text-white transition"
+                >Buy Verified Land Plots</a
+              >
+            </li>
+            <li>
+              <a href="properties.html" class="hover:text-white transition"
+                >Sell Property with Us</a
+              >
+            </li>
+            <li>
+              <a href="management.html" class="hover:text-white transition"
+                >Facility Management Solutions</a
+              >
+            </li>
+            <li>
+              <a href="portfolio.html" class="hover:text-white transition"
+                >View Projects</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h5
+            class="text-sm font-bold uppercase tracking-wider text-amber-500 mb-4"
+          >
+            Get In Touch
+          </h5>
+          <p class="text-xs text-slate-400 mb-2 flex items-center gap-2">
+            <i data-lucide="map-pin" class="w-4 h-4 text-amber-500"></i> Plot
+            29, Area 8, Garki. Abuja
+          </p>
+          <p class="text-xs text-slate-400 mb-2 flex items-center gap-2">
+            <i data-lucide="phone" class="w-4 h-4 text-amber-500"></i>
+            <a href="tel:08032211668" class="hover:text-white transition"
+              >08032211668</a
+            >
+          </p>
+          <p class="text-xs text-slate-400 mb-4 flex items-center gap-2">
+            <i data-lucide="mail" class="w-4 h-4 text-amber-500"></i>
+            <a
+              href="mailto:bolajiidiaro@gmail.com"
+              class="hover:text-white transition"
+              >bolajiidiaro@gmail.com</a
+            >
+          </p>
+          <a
+            href="contact.html"
+            class="block text-center bg-amber-600 hover:bg-amber-500 text-white font-semibold text-xs py-3 rounded-lg shadow-md transition"
+            >Open Contact Page</a
+          >
+        </div>
+      </div>
+
+      <div
+        class="max-w-7xl mx-auto px-6 pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500"
+      >
+        <p>© 2026 Gabosh Global Nig. Ltd. All rights reserved.</p>
+        <div class="flex gap-6 mt-4 sm:mt-0">
+          <a href="#" class="hover:text-slate-200">Privacy Policy</a>
+          <a href="#" class="hover:text-slate-200">Terms of Service</a>
+          <a href="#" class="hover:text-slate-200">COREN Licensing</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating buttons -->
+    <a
+      href="https://wa.me/2348032211668?text=Hello%20Gabosh%20Global!"
+      target="_blank"
+      class="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-emerald-600 hover:bg-emerald-500 shadow-2xl flex items-center justify-center text-white transition hover:scale-110"
+      aria-label="Chat on WhatsApp"
+    >
+      <i data-lucide="message-circle" class="w-7 h-7"></i>
+    </a>
+    <button
+      id="backTop"
+      class="fixed bottom-6 left-6 z-50 w-12 h-12 rounded-full bg-slate-900 hover:bg-slate-800 border border-slate-700 shadow-2xl hidden items-center justify-center text-white transition"
+      aria-label="Back to top"
+    >
+      <i data-lucide="arrow-up" class="w-5 h-5"></i>
+    </button>
+
+    <!-- Enquiry Modal -->
+    <div
+      id="enquiryModal"
+      class="fixed inset-0 z-[60] hidden items-center justify-center p-4"
+    >
+      <div
+        id="modalBackdrop"
+        class="absolute inset-0 bg-slate-900/80 backdrop-blur-sm"
+      ></div>
+      <div
+        class="relative bg-white rounded-2xl max-w-md w-full p-7 shadow-2xl border border-slate-200"
+      >
+        <button
+          onclick="closeEnquiry()"
+          class="absolute top-4 right-4 w-9 h-9 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center transition"
+          aria-label="Close"
+        >
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+        <div
+          class="w-12 h-12 rounded-xl bg-amber-50 flex items-center justify-center mb-4"
+        >
+          <i data-lucide="home" class="w-6 h-6 text-amber-600"></i>
+        </div>
+        <h3 class="text-xl font-bold text-slate-900">Enquire About Property</h3>
+        <p
+          id="enquiryTitle"
+          class="text-sm text-slate-500 mt-1 font-medium"
+        ></p>
+        <div class="space-y-3 mt-5">
+          <input
+            id="eq-name"
+            type="text"
+            placeholder="Your name"
+            class="w-full border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-amber-500"
+          />
+          <input
+            id="eq-phone"
+            type="tel"
+            placeholder="Phone / WhatsApp number"
+            class="w-full border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-amber-500"
+          />
+          <div class="grid grid-cols-2 gap-3">
+            <a
+              id="eq-whatsapp"
+              href="#"
+              target="_blank"
+              class="bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-sm py-3 rounded-xl flex items-center justify-center gap-2 transition"
+              ><i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp</a
+            >
+            <a
+              href="tel:08032211668"
+              class="bg-slate-900 hover:bg-slate-800 text-white font-semibold text-sm py-3 rounded-xl flex items-center justify-center gap-2 transition"
+              ><i data-lucide="phone" class="w-4 h-4"></i> Call Now</a
+            >
+          </div>
+          <p class="text-[11px] text-slate-400 text-center">
+            We respond within a few hours • Mon–Sat
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/script.js"></script>
+  </body>
+</html>
